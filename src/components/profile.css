@@ -1,0 +1,127 @@
+.main-profile-div {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.profile-div {
+	width: 300px;
+	height: 300px;
+	z-index: 11;
+	background-color: white;
+}
+
+#contact-developer {
+	width: 300px;
+	height: 400px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
+	background-color: wheat;
+	z-index: 11;
+	padding: 5px 30px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.social {
+	display: flex;
+	align-items: center;
+	width: 90%;
+	height: 70px;
+	background-color: whitesmoke;
+	z-index: 4;
+	border: 2px solid transparent;
+	border-radius: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	background: #eee;
+	background-image: linear-gradient(
+			45deg,
+			rgba(0, 0, 0, 0.25) 25%,
+			transparent 0,
+			transparent 75%,
+			rgba(0, 0, 0, 0.25) 0
+		),
+		linear-gradient(
+			45deg,
+			rgba(0, 0, 0, 0.25) 25%,
+			transparent 0,
+			transparent 75%,
+			rgba(0, 0, 0, 0.25) 0
+		);
+
+	background-position: 0 0, 3px 3px, 3px 3px, 6px 6px;
+	background-size: 6px 6px;
+}
+.social-image {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 100px;
+	background-color: whitesmoke;
+	border-radius: 50%;
+	transition-property: all;
+	transition-duration: 1s;
+}
+
+.social-contact {
+	text-decoration: none;
+	width: 0px;
+	overflow: hidden;
+	margin-left: 30px;
+	color: blueviolet;
+	position: absolute;
+	background-color: whitesmoke;
+	transition-property: all;
+	transition-duration: 1s;
+}
+
+@keyframes goLeft {
+	from {
+		transform: translateX(0) rotateZ(0deg);
+	}
+	50% {
+		transform: rotateZ(-180deg);
+	}
+	to {
+		transform: translateX(-70px);
+	}
+}
+
+@keyframes goRight {
+	from {
+		transform: translateX(0);
+		width: 0;
+	}
+	65% {
+		width: 0;
+	}
+	to {
+		width: 90px;
+		transform: translateX(40px);
+	}
+}
+
+.go-left-class {
+	animation: goLeft 1.5s ease-in-out;
+	transform: translateX(-70px);
+}
+
+.go-right-class {
+	animation: goRight 1.5s ease-in-out;
+	transform: translateX(40px);
+	width: auto;
+}
