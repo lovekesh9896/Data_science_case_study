@@ -51,4 +51,7 @@ Then we will just pick the first 5 investors.
 One more amazing insight that we can get from this data is where is each of the above investor 
 invest maximum. Like sequiia capital invested 7 times in Ecommerce and consumer internet. indian angel network
 invested 14 times in consumer internet. We can find the type of my friends startup and then approach the 
-investor according to that.`;
+investor according to that.
+
+    Some of the top investors now are sequiia capital, Accel partners, Blume Ventures, Elevation Capital, Tiger Global Management etc.
+`;
