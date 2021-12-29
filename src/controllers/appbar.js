@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-import Avatar from "@material-ui/core/Avatar";
+// import Avatar from "@material-ui/core/Avatar";
 import { CloudDownload } from "@material-ui/icons";
-import MyProfile from "../components/myProfile";
+// import MyProfile from "../components/myProfile";
 // import { NotificationsIcon } from '@material-ui/icons';
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ButtonAppBar() {
 	const classes = useStyles();
-	const [showProfile, setShowProfile] = useState(false);
+	// const [showProfile, setShowProfile] = useState(false);
 	return (
 		<div className={classes.root}>
 			<AppBar position="static">
